@@ -23,4 +23,4 @@ jobs:
       - run: |
           psql \
           -d $TEST_DATABSE_URL \
-          -c "SLECT * from test"
+          -c "SELECT * from test"
