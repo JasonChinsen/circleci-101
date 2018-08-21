@@ -37,7 +37,7 @@ workflows:
   version: 2
   build_and_test: # name of your workflow
     jobs:
-    - build1
+    - build1:
     - build2:
       requires:
-      - build1 # wait for build1 job to complete successfully before starting
+      - build1: # wait for build1 job to complete successfully before starting
